@@ -1,0 +1,7 @@
+6
+(Offices, OFFICE_CODE)
+(Offices,CITY)
+(Employee,EMPLOYEE_NO)
+(Employee,OFFICE_CODE)
+(Customers,CUSTOMER_NAME)
+(Customers,EMPLOYEE_NO)

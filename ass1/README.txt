@@ -1,0 +1,1 @@
+Usage : python3 main.py <inputfile_part1> <inputfile_part2>

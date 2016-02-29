@@ -1,0 +1,7 @@
+6
+(Student,Entry no.)
+(Course,Dep)
+(Course,Code)
+(Registration,Entry no.)
+(Student,CGPA)
+(Student,Dep)

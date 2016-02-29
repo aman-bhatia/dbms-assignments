@@ -1,0 +1,36 @@
+3
+Student
+5
+Entry no.,STRING,1
+Name,STRING,0
+Dep,STRING,0
+CGPA,FLOAT,0
+CODER,BOOLEAN,0
+3
+2013CS10223,Harishchandra Patidar,CS,9.4,True
+2013CS10235,Manoj Kataria,CS,0.0,True
+2013CS10207,Aman Bhatia,CS,9.0,True
+Course
+6
+Cname,STRING,0
+Code,STRING,1
+Credits,INTEGER,0
+Minor,DATE,0
+Time,TIME,0
+Dep,STRING,0
+4
+OS,COL331,5,11/01/15,09:30:10,CS
+PP,COL380,3,02/10/2016,08:00:10,EE
+ML,COL774,4,23/01/1996,11:11:10,MCA
+DBMS,COL362,4,29/02/2004,10:10:23,CS
+Registration
+2
+Code,STRING,1
+Entry no.,STRING,0
+3
+COL331,2013CS10223
+COL774,2013CS10235
+COL380,2013CS10207
+2
+((Student,Entry no.),(Registration,Entry no.))
+((Course,Code),(Registration,Code))
