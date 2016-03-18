@@ -1,0 +1,1 @@
+PROJECT ((SELECT S.name,S.age S,B,R S.sid=R.sid,B.bid=R.bid,B.color=blue) INTERSECTION (SELECT S.name,S.age S,B,R S.sid=R.sid,B.bid=R.bid,B.color=red))

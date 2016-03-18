@@ -1,0 +1,1 @@
+PROJECT (SELECT S.sname S,R S.sid=R.sid,S.age<25)

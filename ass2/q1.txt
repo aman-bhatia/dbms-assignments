@@ -1,0 +1,1 @@
+PROJECT (SELECT S.sname,S.age,S.sid,R.sid,B.bcolor S,R,B S.sid=R.sid,B.bid=R.bid,B.bcolor=blue)
