@@ -1,0 +1,23 @@
+CREATE TABLE actor (id int, fname varchar, lname varchar, gender char(1), PRIMARY KEY(id));
+COPY actor FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/actor.txt' DELIMITER '|' CSV;
+
+CREATE TABLE movie (id int, name varchar, year date, PRIMARY KEY(id));
+COPY movie FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/movie.txt' DELIMITER '|' CSV;
+
+CREATE TABLE directors (id int, fname varchar, lname varchar, PRIMARY KEY(id));
+COPY directors FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/directors.txt' DELIMITER '|' CSV;
+
+CREATE TABLE casts (pid int, mid int, role varchar);
+COPY casts FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/casts.txt' DELIMITER '|' CSV;
+
+CREATE TABLE movieDirectors (did int, mid int, PRIMARY KEY(did,mid));
+COPY movieDirectors FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/movie_directors.txt' DELIMITER '|' CSV;
+
+CREATE TABLE genre (mid int, genre varchar, PRIMARY KEY(genre));
+COPY genre FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/genre.txt' DELIMITER '|' CSV;
+
+CREATE TABLE userProfile (userid varchar, gender char, age int, country varchar, registered date, PRIMARY KEY(userid));
+COPY userProfile FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/users.txt' DELIMITER '|' CSV;
+
+CREATE TABLE ratings (mid int, userid varchar, rating int, PRIMARY KEY(userid,mid));
+COPY ratings FROM '/home/abhatia/6th_sem/dbms/ass3/imdb2010/ratings.txt' DELIMITER '|' CSV;
